@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elektroshoppenFXML.LoginController">
+   <children>
+      <Text layoutX="120.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Velkommen til Electroshoppen">
+         <font>
+            <Font name="Avenir Next Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="120.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log in">
+         <font>
+            <Font name="Avenir Next Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="userName" layoutX="120.0" layoutY="141.0" onAction="#login" />
+      <Text layoutX="120.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brugernavn" />
+      <TextField fx:id="password" layoutX="120.0" layoutY="200.0" onAction="#login" />
+      <Text layoutX="120.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kodeord" />
+      <Text layoutX="120.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingen bruger?" />
+      <Button layoutX="120.0" layoutY="276.0" mnemonicParsing="false" onAction="#opretBruger" text="Opret" />
+   </children>
+</AnchorPane>

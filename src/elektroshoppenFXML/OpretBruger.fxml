@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elektroshoppenFXML.OpretBrugerController">
+   <children>
+      <Text layoutX="210.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Opret bruger" textAlignment="CENTER">
+         <font>
+            <Font name="Avenir Next Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="69.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fornavn">
+         <font>
+            <Font name="Avenir Next Regular" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="69.0" layoutY="97.0" />
+      <TextField layoutX="69.0" layoutY="148.0" />
+      <Text layoutX="69.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Efternavn">
+         <font>
+            <Font name="Avenir Next Regular" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="69.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse">
+         <font>
+            <Font name="Avenir Next Regular" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="69.0" layoutY="199.0" />
+      <Text layoutX="69.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Postnr.">
+         <font>
+            <Font name="Avenir Next Regular" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="69.0" layoutY="252.0" />
+      <Text layoutX="69.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail">
+         <font>
+            <Font name="Avenir Next Regular" size="13.0" />
+         </font>
+      </Text>
+      <TextField layoutX="69.0" layoutY="309.0" />
+      <Button layoutX="471.0" layoutY="309.0" mnemonicParsing="false" onAction="#opret" text="Opret" />
+   </children>
+</AnchorPane>

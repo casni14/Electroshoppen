@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="elektroshoppenFXML.BrugerInterfaceController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="109.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="999.0" />
+      <TextField fx:id="searchBar" layoutX="482.0" layoutY="31.0" prefHeight="42.0" prefWidth="272.0" promptText="Søg vare" />
+      <ImageView fitHeight="41.0" fitWidth="38.0" layoutX="433.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../grafik/search-icon-01.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="266.0" fitWidth="471.0" layoutX="-23.0" layoutY="-44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../grafik/ElectroshoppenLogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="53.0" layoutX="836.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../grafik/Kurv.png" />
+         </image>
+      </ImageView>
+      <ListView fx:id="resultsList" focusTraversable="false" layoutX="230.0" layoutY="108.0" onMouseReleased="#getProductPage" pickOnBounds="false" prefHeight="542.0" prefWidth="768.0" />
+      <TreeView layoutX="2.0" layoutY="108.0" prefHeight="543.0" prefWidth="227.0" />
+      <RadioButton layoutX="482.0" layoutY="82.0" mnemonicParsing="false" onAction="#setPC" text="PC">
+         <toggleGroup>
+            <ToggleGroup fx:id="type" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="535.0" layoutY="82.0" mnemonicParsing="false" onAction="#setLaptop" text="Bærbar computer" toggleGroup="$type" />
+      <RadioButton layoutX="654.0" layoutY="82.0" mnemonicParsing="false" onAction="#setTV" text="TV" toggleGroup="$type" />
+      <RadioButton layoutX="697.0" layoutY="82.0" mnemonicParsing="false" onAction="#setSpeakers" text="Højtalere" toggleGroup="$type" />
+      <TextField fx:id="minPrice" layoutX="780.0" layoutY="79.0" prefHeight="22.0" prefWidth="71.0" promptText="min pris" />
+      <TextField fx:id="maxPrice" layoutX="873.0" layoutY="79.0" prefHeight="22.0" prefWidth="71.0" promptText="max pris" />
+      <Button layoutX="428.0" layoutY="35.0" mnemonicParsing="false" onAction="#browseProducts" opacity="0.0" prefHeight="38.0" prefWidth="53.0" />
+   </children>
+</AnchorPane>
